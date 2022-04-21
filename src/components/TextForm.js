@@ -5,10 +5,12 @@ export default function TextForm(props) {
     const handleClick = ()=>{
         let newText = text.toUpperCase();
         setText(newText)
+        props.showAlert("Text Converted to Upper Case", "warning")
     }
     const handleLowerClick = ()=>{
         let newText = text.toLowerCase();
         setText(newText)
+        props.showAlert("Text Converted to lower Case", "danger")
     }
 
 

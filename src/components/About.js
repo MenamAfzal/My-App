@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function About() {
-    const [myStyle , setMyStyle] = useState( {
+    const [myStyle , setMyStyle] = useState({
         color : 'black',
         backgroundColor : 'white'  
     }) 
@@ -29,7 +29,7 @@ export default function About() {
 
     }
   return (
-    <div className>
+    <>
         <h1 className='my-2' style={myStyle}>About Us</h1>
         <div className="accordion" id="accordionExample">
             <div className="accordion-item">
@@ -74,6 +74,6 @@ export default function About() {
         </div>
 
       
-    </div>
+    </>
   )
 }
